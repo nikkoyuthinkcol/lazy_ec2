@@ -2,7 +2,7 @@
 
 # NVIDIA Container-toolkit
 docker --version
-if [[ $? -eq 127 ]]; then;
+if [[ $? -eq 127 ]]; then
 	echo docker is not installed, please install docker first.
 else
 	nvidia-ctk --version
