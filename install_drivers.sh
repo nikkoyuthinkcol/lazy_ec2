@@ -14,9 +14,9 @@ if [[ $(cat /proc/driver/nvidia/version) && true ]]; then
 	echo 'The driver is already installed.'
 elif [[ $(lshw -C display | grep vendor) =~ NVIDIA ]]; then
 	echo "Install ubuntu-drivers..."
-	sudo apt install -y ubuntu-drivers-common
-	sudo ubuntu-drivers install --gpgpu
-	#sudo apt install nvidia-headless-535-server nvidia-utils-535-server -y
+	# sudo apt install -y ubuntu-drivers-common
+	# sudo ubuntu-drivers install --gpgpu
+	sudo apt install nvidia-headless-535-server nvidia-utils-535-server -y
 else
 	echo 'No Nvidia-GPU Found, skipping...'
 fi
