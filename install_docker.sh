@@ -26,4 +26,4 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # Activate changes
-newgrp docker
+# newgrp docker

@@ -2,8 +2,22 @@
 Make sure you are using **bash, not sh**.
 
 Recommend Bash >=5.2. Older bash are not tested.
+
+To install all packages
 ```
-./<script>.sh
+make all
+```
+
+To install partial packages, refer to the Makefile. In Makefile, find:
+```
+<target>: prerequisites
+    command
+    command
+    command
+```
+and 
+```
+make <target>
 ```
 
 # Tips and Tricks
