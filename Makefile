@@ -1,7 +1,7 @@
 SHELL=/bin/bash
 .PHONY : all docker docker_compose nvidia_container_runtime
 
-all: post_install terminal
+all: post_install
 
 driver:
 	./install_drivers.sh
@@ -18,5 +18,5 @@ nvidia_container_runtime: docker_compose driver
 terminal:
 	./install_terminal.sh
 
-post_install: nvidia_container_runtime
+post_install: nvidia_container_runtime terminal
 	newgrp docker
