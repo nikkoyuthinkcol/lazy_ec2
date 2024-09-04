@@ -102,3 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias up="docker compose up --build -d"
+alias down="docker compose down -t 0"
+alias dps="docker ps -a"
