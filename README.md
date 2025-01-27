@@ -37,3 +37,7 @@ apt-cache search <package>
 ## Help, I cannot lanuch an instance!
 
 This maybe due to quota problem, try increasing **Running On-Demand [instance_type] instances**.
+
+## When I SSH to the EC2, it doesn't let me in even I am sure the keys are correct.
+
+Try removing the fingerprint from the `known_hosts` file, and try connecting again. For windows, it is located at `C:\Users\<username>\.ssh`
