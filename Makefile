@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-.PHONY : all docker docker_compose nvidia_container_runtime
+.PHONY : all docker docker_compose nvidia_container_runtime kubernetes
 
 all: post_install
 
@@ -11,6 +11,9 @@ docker:
 
 docker_compose: docker
 	./install_docker_compose.sh
+
+kubernetes: docker
+	./install_k8.sh
 
 nvidia_container_runtime: docker_compose driver
 	./install_nvidia_container_toolkit.sh
