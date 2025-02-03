@@ -5,6 +5,9 @@ all: post_install_cpu
 
 gpu: post_install_gpu
 
+azurecli:
+	./install_azurecli.sh
+
 driver:
 	./install_drivers.sh
 
