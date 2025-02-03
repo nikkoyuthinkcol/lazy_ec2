@@ -2,6 +2,7 @@
 
 if [[ $? -eq 127 ]]; then
 	echo docker is not installed, unless you have other container runtime solutions such as virtualbox, please install docker.
+fi
 
 # minikube (local k8, an all-in-one solution)
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64

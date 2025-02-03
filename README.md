@@ -3,10 +3,15 @@ Make sure you are using **bash, not sh**.
 
 Recommend Bash >=5.2. Older bash are not tested.
 
-To install all packages
+To install all packages (default: CPU)
 ```
 make all
 ```
+
+To install all packages for **GPU**
+```
+make gpu
+``` 
 
 To install partial packages, refer to the Makefile. In Makefile, find:
 ```
